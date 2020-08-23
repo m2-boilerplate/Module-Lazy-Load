@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="M2Boilerplate\LazyLoad\Block\Js" name="m2bp.lazyload.init" template="M2Boilerplate_LazyLoad::js.phtml" ifconfig="dev/lazy_load/enabled"/>
+        </referenceContainer>
+    </body>
+</page>

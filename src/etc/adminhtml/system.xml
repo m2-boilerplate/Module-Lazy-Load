@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="dev">
+            <group id="lazy_load" translate="label" showInDefault="1" showInWebsite="1" showInStore="1"
+                   sortOrder="1800">
+                <label>Lazy Load Settings</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="css_class" translate="label" type="text" sortOrder="55" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>Lazy Load CSS Class</label>
+                </field>
+                <field id="blocked_css_classes" translate="label comment" type="textarea" sortOrder="55" showInDefault="1"
+                       showInWebsite="0" showInStore="0">
+                    <label>CSS Classes for non Lazy Load Elements</label>
+                    <comment>Comma-separated List of CSS Classes</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

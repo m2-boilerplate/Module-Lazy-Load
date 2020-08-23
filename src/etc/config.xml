@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <dev>
+            <lazy_load>
+                <enabled>1</enabled>
+                <css_class>m2pb-lazy</css_class>
+                <blocked_css_classes>m2pb-no-lazy</blocked_css_classes>
+            </lazy_load>
+        </dev>
+    </default>
+</config>

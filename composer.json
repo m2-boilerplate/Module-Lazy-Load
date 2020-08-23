@@ -1,0 +1,38 @@
+{
+    "name": "m2-boilerplate/module-lazy-load",
+    "description": "Magento 2 module to add Lazy Load support to all images, videos and iframes in the Magento frontend",
+    "keywords": [
+        "composer-installer",
+        "magento",
+        "Magento 2",
+        "vanilla-lazyload",
+        "lazyload-images",
+        "lazy-loading",
+        "images",
+        "videos",
+        "iframes",
+        "lazyload",
+        "lazyload-iframes",
+        "lazyload-videos",
+        "lazyload-script"
+    ],
+    "require": {
+        "magento/framework": "^101.0.1|^101.1|^102.0|^103.0",
+        "php": ">=7.1.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "M2Boilerplate\\LazyLoad\\": "src"
+        }
+    },
+    "suggest": {
+        "yireo/magento2-webp2": "Magento 2 module to add WebP support to Magento 2"
+    }
+}

@@ -1,0 +1,16 @@
+<?php /** @var $block \M2Boilerplate\LazyLoad\Block\Js */ ?>
+<script type="application/javascript">
+    <?php /* faster image load than x-magento-init */ ?>
+    if (document.querySelectorAll('<?= $block->escapeJs($block->getLazyLoadSelector()); ?>').length > 0) {
+        require(['m2bpLazyLoad'], function (init) {
+            init(<?= $block->getLazyLoadConfig(); ?>);
+        });
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+        "<?= $block->escapeJs($block->getLazyLoadSelector()); ?>": {
+            "m2bpLazyLoad": <?= $block->getLazyLoadConfig(); ?>
+        }
+    }
+</script>
