@@ -1,4 +1,4 @@
-# M2Boilerplate ServiceWorker
+# M2Boilerplate Lazy Load
 
 Magento 2 module to add Lazy Load support to all images, videos and iframes in the Magento frontend
 
